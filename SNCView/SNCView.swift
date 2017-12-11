@@ -8,22 +8,22 @@
 
 import UIKit
 
-class SNCViewController: UIPageViewController, UIPageViewControllerDataSource {
-    var vcArray:[UIViewController] = []
-    var isInfinite = false
-    var startIndex = 0
+public class SNCViewController: UIPageViewController, UIPageViewControllerDataSource {
+    public var vcArray:[UIViewController] = []
+    public var isInfinite = false
+    public var startIndex = 0
     
-    init(isVertical: UIPageViewControllerNavigationOrientation, vcArray: [UIViewController], startIndex: Int){
+    public init(isVertical: UIPageViewControllerNavigationOrientation, vcArray: [UIViewController], startIndex: Int){
         super.init(transitionStyle: .scroll, navigationOrientation: isVertical, options: nil)
         self.vcArray = vcArray
         self.startIndex = startIndex
     }
     
-    required init(coder aDecoder: NSCoder) {
+    public required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
     }
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         if vcArray.count != 0 {
             self.setViewControllers([vcArray[startIndex]], direction: .reverse, animated: true, completion: nil)
@@ -32,11 +32,11 @@ class SNCViewController: UIPageViewController, UIPageViewControllerDataSource {
         self.view.backgroundColor = UIColor.white
     }
     
-    override func didReceiveMemoryWarning() {
+    public override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         guard let index = vcArray.index(of: viewController), index > 0 else {
             if isInfinite {
                 return vcArray[vcArray.count - 1]
@@ -47,7 +47,7 @@ class SNCViewController: UIPageViewController, UIPageViewControllerDataSource {
         return vcArray[index - 1]
     }
     
-    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
+    public func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
     {
         guard let index = vcArray.index(of: viewController), index < vcArray.count - 1 else {
             if isInfinite {
