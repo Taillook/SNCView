@@ -7,36 +7,17 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'SNCView'
-  s.version          = '0.1.1'
-  s.summary          = 'You can use SnapChat likes Paging.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-SNCView is PageViewController Extention.
-                       DESC
-
-  s.homepage         = 'https://github.com/Taillook/SNCView'
-  # s.screenshots     = ''
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Taillook' => 'jousoku@gmail.com' }
-  s.source           = { :git => 'https://github.com/Taillook/SNCView.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/Taillook'
-
-  s.ios.deployment_target = '11.0'
-
-  s.source_files = 'SNCView/Classes/**/*'
-
-  # s.resource_bundles = {
-  #   'SNCView' => ['SNCView/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.name         = "SNCView"
+  s.version      = "0.1.1"
+  s.summary      = 'You can use SnapChat likes Paging.'
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
+  s.homepage     = "https://github.com/Taillook/SNCView"
+  s.author       = { "Taillook" => "jousoku@gmail.com" }
+  s.social_media_url   = "http://twitter.com/Taillook"
+  s.source       = { :git => "https://github.com/Taillook/SNCView.git", :tag => "0.1.1" }
+  s.platform     = :ios, '11.0'
+  s.requires_arc = true
+  s.source_files = 'SNCView/*.swift'
   s.frameworks = 'UIKit'
-  # s.dependency
+
 end

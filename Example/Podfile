@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'SNCView_Example' do
-  pod 'SNCView', :path => '../'
+  pod 'SNCView', :git => 'https://github.com/Taillook/SNCView.git'
 
   target 'SNCView_Tests' do
     inherit! :search_paths
