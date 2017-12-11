@@ -1,6 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "SNCView"
   s.version      = "0.1.5"
+  s.platform = :ios, "11.0"
   s.summary      = "PageView with ViewControllersArray."
   s.homepage     = "https://github.com/Taillook/SNCView"
   s.license      = { :type => "MIT", :file => "LICENSE" }
