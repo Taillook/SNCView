@@ -1,6 +1,6 @@
 # SNCView
 
-[![CI Status](http://img.shields.io/travis/Taillook/SNCView.svg?style=flat)](https://travis-ci.org/Taillook/SNCView)
+
 [![Version](https://img.shields.io/cocoapods/v/SNCView.svg?style=flat)](http://cocoapods.org/pods/SNCView)
 [![License](https://img.shields.io/cocoapods/l/SNCView.svg?style=flat)](http://cocoapods.org/pods/SNCView)
 [![Platform](https://img.shields.io/cocoapods/p/SNCView.svg?style=flat)](http://cocoapods.org/pods/SNCView)
