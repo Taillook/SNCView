@@ -6,6 +6,7 @@
 //  Copyright (c) 2017 Taillook. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
 class ViewController: SNCViewController {
@@ -30,4 +31,3 @@ class ViewController: SNCViewController {
     }
 
 }
-
