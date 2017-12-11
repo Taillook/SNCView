@@ -1,0 +1,6 @@
+framework module SNCView {
+  umbrella header "SNCView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SNCView_Example' do
+  pod 'SNCView', :path => '../'
+
+  target 'SNCView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
