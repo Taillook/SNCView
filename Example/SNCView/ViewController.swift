@@ -8,11 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: SNCViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        for _ in 0...3 {
+            let vc = UIViewController()
+            let r: CGFloat = CGFloat(arc4random_uniform(255)+1) / 255.0
+            let g: CGFloat = CGFloat(arc4random_uniform(255)+1) / 255.0
+            let b: CGFloat = CGFloat(arc4random_uniform(255)+1) / 255.0
+            let color: UIColor = UIColor(red: r, green: g, blue: b, alpha: 1.0)
+            vc.view.backgroundColor = color
+            vcArray.append(vc)
+        }
+        self.setViewControllers([vcArray[1]], direction: .reverse, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

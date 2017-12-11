@@ -28,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2585EE61EF97DB57B7962253 /* SNCView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SNCView.podspec; path = ../SNCView.podspec; sourceTree = "<group>"; };
-		26D397DEFAA1A464F54E4C81 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2585EE61EF97DB57B7962253 /* SNCView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SNCView.podspec; path = ../SNCView.podspec; sourceTree = "<group>"; };
+		26D397DEFAA1A464F54E4C81 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		45DDB520FF43E496187E23E0 /* Pods_SNCView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNCView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* SNCView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNCView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		CAB1A8104FA8E5FF4B96C025 /* Pods-SNCView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNCView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SNCView_Example/Pods-SNCView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		ED0FDF27787617106A446289 /* Pods-SNCView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNCView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SNCView_Tests/Pods-SNCView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F1D03FC958CAF986663692FB /* Pods-SNCView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNCView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SNCView_Example/Pods-SNCView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		FA2F47CE6F8466412E7B4A33 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FA2F47CE6F8466412E7B4A33 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,10 +215,13 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = YS65CTH2V7;
 						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = YS65CTH2V7;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -517,11 +520,16 @@
 			baseConfigurationReference = CAB1A8104FA8E5FF4B96C025 /* Pods-SNCView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YS65CTH2V7;
 				INFOPLIST_FILE = SNCView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -532,11 +540,16 @@
 			baseConfigurationReference = F1D03FC958CAF986663692FB /* Pods-SNCView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YS65CTH2V7;
 				INFOPLIST_FILE = SNCView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -546,6 +559,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CA634B6BB65F72F134C47F50 /* Pods-SNCView_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = YS65CTH2V7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -567,6 +581,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ED0FDF27787617106A446289 /* Pods-SNCView_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = YS65CTH2V7;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
